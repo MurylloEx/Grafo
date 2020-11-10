@@ -1174,7 +1174,9 @@
 
         <div class="wrapper" style="margin: 16px; font-size: 1rem">
           <div class="content-header" style="margin-top: -5vh">
-            <h2>Introdução sobre grafos, busca em grafos e conceito do projeto</h2>
+            <h2>
+              Introdução sobre grafos, busca em grafos e conceito do projeto
+            </h2>
           </div>
           <div
             id="image-container"
@@ -1185,53 +1187,61 @@
               width: 50%;
             "
           >
-          <img src="https://i.ibb.co/s9jHhM6/2020-11-09-214923.jpg" 
-          alt="2020-11-09-214923" 
-          border="0"
-          style="
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          width: 50%;
-          ">
+            <img
+              src="https://i.ibb.co/s9jHhM6/2020-11-09-214923.jpg"
+              alt="2020-11-09-214923"
+              border="0"
+              style="
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+              "
+            />
           </div>
 
           <div class="content" style="margin-left: 10px; text-align: justify">
             <h3>Grafos</h3>
 
             <div>
-              <p>A teoria dos grafos ou de grafos é um ramo da matemática que estuda as relações entre os objetos de um determinado
-                conjunto. Para tal são empregadas estruturas chamadas de grafos,  G(V,E) onde
-                V é um conjunto não vazio de objetos denominados vértices (ou nós) e E (do inglês
-                edges - arestas) é um subconjunto de pares não ordenados de V.
-              </p>              
-              <br>
               <p>
-                Dependendo da aplicação, arestas podem ou não ter direção, pode ser permitido ou não arestas ligarem um vértice a ele
-                próprio e vértices e/ou arestas podem ter um peso (numérico) associado. Se as arestas têm um sentido associado (indicado
-                por uma seta na representação gráfica) temos um dígrafo (grafo orientado). Um grafo com um único vértice e sem arestas é
-                conhecido como grafo trivial.
+                A teoria dos grafos ou de grafos é um ramo da matemática que
+                estuda as relações entre os objetos de um determinado conjunto.
+                Para tal são empregadas estruturas chamadas de grafos, G(V,E)
+                onde V é um conjunto não vazio de objetos denominados vértices
+                (ou nós) e E (do inglês edges - arestas) é um subconjunto de
+                pares não ordenados de V.
               </p>
-              <br>
+              <br />
               <p>
-                Os grafos são geralmente representados graficamente da seguinte maneira: é desenhado um círculo para cada vértice, 
-                e para cada aresta é desenhado um arco conectando suas extremidades. Se o grafo for direcionado, seu sentido é indicado na 
-                aresta por uma seta.
-              </p>              
+                Dependendo da aplicação, arestas podem ou não ter direção, pode
+                ser permitido ou não arestas ligarem um vértice a ele próprio e
+                vértices e/ou arestas podem ter um peso (numérico) associado. Se
+                as arestas têm um sentido associado (indicado por uma seta na
+                representação gráfica) temos um dígrafo (grafo orientado). Um
+                grafo com um único vértice e sem arestas é conhecido como grafo
+                trivial.
+              </p>
+              <br />
+              <p>
+                Os grafos são geralmente representados graficamente da seguinte
+                maneira: é desenhado um círculo para cada vértice, e para cada
+                aresta é desenhado um arco conectando suas extremidades. Se o
+                grafo for direcionado, seu sentido é indicado na aresta por uma
+                seta.
+              </p>
             </div>
           </div>
-          <div
-            id="image-container"
-          >
+          <div id="image-container">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/5/57/6n-graf.png?w=144"
               alt=""
               srcset=""
               style="
-              margin-left: auto;
-              margin-right: auto;
-              display: block;
-              width: 20%;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                width: 20%;
               "
             />
           </div>
@@ -1239,19 +1249,29 @@
             <h3>Busca e conceito</h3>
 
             <p>
-              <strong>Busca em extensão ou largura:</strong> (Breadth-First Search ou BFS). Um percurso em extensão é visitar cada nó
-              começando do menor nível e move-se para os níveis mais altos nível após nível, visitando cada nó da esquerda para a
-              direita. Sua implementação é direta quando uma fila é utilizada. Depois que um nó é visitado, seus filhos, se houver
-              algum, são colocados no final da fila e o nó no início da fila é visitado. Assim, os nós do nível n+1 serão visitados
-              somente depois de ter visitados todos os nós do nível n. Computa a menor distância para todos os vértices alcançáveis. O
-              sub-grafo contendo os caminhos percorridos é chamado de breadth-first tree. No projeto, é utilizado a busca em extensão, baseado
-              em etapas e de maneira recursiva. 
+              <strong>Busca em extensão ou largura:</strong> (Breadth-First
+              Search ou BFS). Um percurso em extensão é visitar cada nó
+              começando do menor nível e move-se para os níveis mais altos nível
+              após nível, visitando cada nó da esquerda para a direita. Sua
+              implementação é direta quando uma fila é utilizada. Depois que um
+              nó é visitado, seus filhos, se houver algum, são colocados no
+              final da fila e o nó no início da fila é visitado. Assim, os nós
+              do nível n+1 serão visitados somente depois de ter visitados todos
+              os nós do nível n. Computa a menor distância para todos os
+              vértices alcançáveis. O sub-grafo contendo os caminhos percorridos
+              é chamado de breadth-first tree. No projeto, é utilizado a busca
+              em extensão, baseado em etapas e de maneira recursiva.
             </p>
-            <br>
+            <br />
             <p>
-              Na prática, o algoritmo faz um SELECT no banco de dados, as palavras que são colocadas no campo de pesquisa são divididas atráves de espaços.
-              Realiza um select com uma cláusula WHERE contendo um LIKE no título, URL e descrição. Após isso, se respostas forem satisfeitas e os 
-              termos estiverem contidos, ele retorna os resultados. Basicamente, o site faz uma busca dos termos em 3 lugares (Título, URL e Descrição) e retorna os resultados.
+              Na prática, o algoritmo faz um SELECT no banco de dados, as
+              palavras que são colocadas no campo de pesquisa são divididas
+              atráves de espaços. Realiza um select com uma cláusula WHERE
+              contendo um LIKE no título, URL e descrição. Após isso, se
+              respostas forem satisfeitas e os termos estiverem contidos, ele
+              retorna os resultados. Basicamente, o site faz uma busca dos
+              termos em 3 lugares (Título, URL e Descrição) e retorna os
+              resultados.
             </p>
 
             <img
@@ -1259,15 +1279,65 @@
               alt=""
               srcset=""
               style="
-              margin-left: auto;
-              margin-right: auto;
-              display: block;
-              width: 20%;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                width: 20%;
               "
             />
           </div>
           <div class="content-footer"></div>
         </div>
+        <div class="wrapper" style="margin: 16px; font-size: 1rem">
+          <div class="content" style="margin-left: 10px; text-align: justify">
+            <h3>Robô de busca</h3>
+
+            <p>
+              Para fazer a busca, o robô, através de um algoritmo enumera os
+              vértices. A partir de um vértice s é construído uma árvore
+              radicada com raiz s: cada arco v-w percorrido até um vértice w não
+              numerado é acrescentado à árvore. Essa árvore radicada é conhecida
+              como árvore de busca em largura. Podemos representar essa árvore
+              explicitamente por um vetor de pais. Uma fila, são numerados na
+              ordem em que eles são descobertos. Cada vértice, até ser definido
+              a origem, tem distância infinita entre um e outro. Quando é
+              definido a origem V(0) ele é retirado da fila e seus adjacentes
+              são colocados na fila. além disso, é atualizada a distância e o
+              pai, tomando como referência para atualizar a distância é
+              utilizada a localização entre o que foi descoberto e o V(0), a
+              origem.
+
+              <br />
+              <img
+                src="../../busca.png"
+                alt="2020-11-10-161800"
+                border="0"
+                style="
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                  width: 50%;
+                "
+              />
+            </p>
+
+            <p>
+              O robô retira o primeiro da fila e acrescenta, caso exista, os
+              seus filhos a serem descobertos a fila.
+            </p>
+
+            <img
+              src="../../fim da busca.png"
+              alt="2020-11-10-161801"
+              border="0"
+              style="
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+              "
+            />
+          </div>
           <div class="content-footer"></div>
         </div>
         <div class="footer">
