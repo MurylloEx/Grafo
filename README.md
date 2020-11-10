@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="./GrafoProject/src/images/grafo.png" width=""/>
+   <img src="https://i.imgur.com/vnNYLjT.png" width=""/>
 </p>
 
 <p align="center">
