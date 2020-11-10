@@ -53,8 +53,10 @@ const argv = yargs
     console.log('[' + 'FAILED'.red + '] Falha ao se conectar com o banco de dados. O arquivo fornecido não existe.');
     process.exit(1);
   }
+
   console.log('[' + 'AGUARDE'.yellow + '] O algoritmo iniciará em breve. O mapeamento dos sites será feito através do algoritmo Breadth-First Search (BFS).');
   console.log('[' + 'COPYRIGHT'.yellow + '] Desenvolvido por estudantes de Eng. de Software da UPE - Garanhuns (Muryllo, Gustavo, Kelvin, Edgleyson, Thiago).\n');
+
   let db = new sqlite3.Database(argv['database']);
 
   //#region [ FUNÇÕES ADAPTADAS DO SQLITE ]
@@ -138,22 +140,33 @@ const argv = yargs
 
   //#endregion
 
-  db.exec(`BEGIN TRANSACTION; CREATE TABLE IF NOT EXISTS "websites" ( "id"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, "site_url" TEXT NOT NULL, "site_title"	TEXT NOT NULL, "site_description"	TEXT NOT NULL ); COMMIT;`);
+
+  await sqlite_query_exec(`BEGIN TRANSACTION; CREATE TABLE IF NOT EXISTS "websites" ( "id"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, "site_url" TEXT NOT NULL, "site_title"	TEXT NOT NULL, "site_description"	TEXT NOT NULL ); COMMIT;`, []);
+  let sites = (await sqlite_fetch_rows(`SELECT site_url FROM websites;`, []));
+  if (sites){
+    let buffer = {};
+    for (let k = 0; k < sites.length; k++){
+      buffer[sites[k]] = true;
+    }
+    sites = buffer;
+  } else {
+    sites = {};
+  }
   let event = new events.EventEmitter();
-  event.on('vertices', (vertex) => {
-    try {
-      db.run(`INSERT INTO websites (site_url, site_title, site_description) VALUES (?, ?, ?);`, [vertex.Uri, vertex.Title, vertex.Description]);
-    } catch (e) {
+  event.on('vertices', async (vertex) => {
+    if (await sqlite_query_exec(`INSERT INTO websites (site_url, site_title, site_description) VALUES (?, ?, ?);`, [vertex.Uri, vertex.Title, vertex.Description]) == false) {
       console.log('[' + 'ERROR'.red + '] Erro ao inserir um website no banco de dados.');
     }
     if (argv['trace'] == true)
       console.log('[' + 'MAPPED'.green + '] [' + 'Depth: '.red + String(vertex.Depth).red + '] Title: ' + String(vertex.Title).yellow);
   });
+
   event.on('timeout', () => {
     if (argv['trace'] == true)
       console.log('[' + 'TIMEOUT'.red + '] Tempo limite atingido. Falha ao percorrer um vértice.');
   });
-  await engine.GrafoWebCrawler(argv['begin-vertex'], Number(argv['max-depth']), event);
+
+  await engine.GrafoWebCrawler(argv['begin-vertex'], Number(argv['max-depth']), event, sites);
 })();
 
 

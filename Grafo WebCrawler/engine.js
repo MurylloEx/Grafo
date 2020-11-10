@@ -87,9 +87,9 @@ async function GetSubVertices(vertex, evt) {
   return vertices;
 }
 
-async function GrafoWebCrawler(uri, depth, evt) {
+async function GrafoWebCrawler(uri, depth, evt, sites) {
   let Vertex = await CreateUriMapping(uri, depth, evt);
-  let KnownSites = {};
+  let KnownSites = sites;
   if (typeof Vertex == 'undefined') {
     evt.emit('timeout', {});
   } else {
