@@ -1,6 +1,6 @@
 {
   "name": "@grafo/web",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "This project was created for educational purposes. The main goal is show how a grafo based webcrawler works while mapping the Internet websites.",
   "main": "index.js",
   "scripts": {
