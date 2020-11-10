@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="./GrafoProject/grafo.png" width=""/>
+   <img src="./GrafoProject/src/images/grafo.png" width=""/>
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@
    </a>
 </p>
 
-> 📑 **Grafo** é um buscador baseado na estrutura de dados Grafos, que se utiliza pesquisa em profundidade para achar links em websites na internet e assim retornar uma página com os mesmos, parecido com o que o Google faz.
+> 📑 **Grafo** é um buscador baseado na estrutura de dados Grafos, que se utiliza pesquisa em profundidade para achar links em websites na internet e assim retornar uma página com os mesmos, parecido com o que o Google faz. [(Link para o repositório)](https://github.com/MurylloEx/Grafo)
 
 <p align="center">
     <a href="README.md">Português</a>
@@ -33,19 +33,26 @@
 # 📸 Screenshots
 
 <p align="center">
-   <img src="./.github/screenshot00.jpg" />
+   <img src="https://user-images.githubusercontent.com/32225687/98737839-960d2b00-2385-11eb-8445-cc7b70f8da15.png" />
 </p>
 <p align="center">
-   <img src="./.github/screenshot00.jpg" />
+   <img src="https://user-images.githubusercontent.com/32225687/98738035-dd93b700-2385-11eb-9b0d-fe8e5cbe8b40.png" />
+</p>
+<p align="center">
+   <img src="https://user-images.githubusercontent.com/32225687/98738093-f308e100-2385-11eb-84ca-3527b0944552.png" />
 </p>
 
 # :computer: Tecnologias
 
 Este projeto foi feito utilizando as seguintes tecnologias:
 
-- [NodeJS](https://link-para-a-Tecnologia-1.com/)
-- [Express](https://link-para-a-Tecnologia-2.com/)
-- [SQLites](https://link-para-a-Tecnologia-3.com/)
-- [HTML](https://link-para-a-Tecnologia-4.com/)
-- [CSS](https://link-para-a-Tecnologia-5.com/)
-- [Tecnologia #6](https://link-para-a-technology-6.com/)
+- [NodeJS](https://nodejs.org/en/about/)
+- [Express](https://expressjs.com/pt-br/)
+- [SQLite3](https://www.npmjs.com/package/sqlite3)
+- [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
+- [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [Colors](https://www.npmjs.com/package/colors)
+- [Mime-types](https://www.npmjs.com/package/mime-types)
+- [Parse5](https://www.npmjs.com/package/parse5)
+- [Yargs](https://www.npmjs.com/package/yargs)
+- [Axios](https://www.npmjs.com/package/axios)
