@@ -33,10 +33,13 @@
 # 📸 Screenshots
 
 <p align="center">
-   <img src="./.github/screenshot00.jpg" />
+   <img src="https://user-images.githubusercontent.com/32225687/98737839-960d2b00-2385-11eb-8445-cc7b70f8da15.png" />
 </p>
 <p align="center">
-   <img src="./.github/screenshot00.jpg" />
+   <img src="https://user-images.githubusercontent.com/32225687/98738035-dd93b700-2385-11eb-9b0d-fe8e5cbe8b40.png" />
+</p>
+<p align="center">
+   <img src="https://user-images.githubusercontent.com/32225687/98738093-f308e100-2385-11eb-84ca-3527b0944552.png" />
 </p>
 
 # :computer: Tecnologias
