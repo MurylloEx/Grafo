@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="./GrafoProject/grafo.png" width=""/>
+   <img src="./GrafoProject/src/images/grafo.png" width=""/>
 </p>
 
 <p align="center">
@@ -56,4 +56,3 @@ Este projeto foi feito utilizando as seguintes tecnologias:
 - [Parse5](https://www.npmjs.com/package/parse5)
 - [Yargs](https://www.npmjs.com/package/yargs)
 - [Axios](https://www.npmjs.com/package/axios)
-
