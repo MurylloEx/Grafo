@@ -18,7 +18,7 @@
    </a>
 </p>
 
-> 📑 **Grafo** é um buscador baseado na estrutura de dados Grafos, que se utiliza pesquisa em profundidade para achar links em websites na internet e assim retornar uma página com os mesmos, parecido com o que o Google faz.
+> 📑 **Grafo** é um buscador baseado na estrutura de dados Grafos, que se utiliza pesquisa em profundidade para achar links em websites na internet e assim retornar uma página com os mesmos, parecido com o que o Google faz. [(Link para o repositório)](https://github.com/MurylloEx/Grafo)
 
 <p align="center">
     <a href="README.md">Português</a>
@@ -46,8 +46,14 @@
 
 Este projeto foi feito utilizando as seguintes tecnologias:
 
-- [NodeJS](https://link-para-a-Tecnologia-1.com/)
-- [Express](https://link-para-a-Tecnologia-2.com/)
-- [SQLite3](https://link-para-a-Tecnologia-3.com/)
-- [HTML](https://link-para-a-Tecnologia-4.com/)
-- [CSS](https://link-para-a-Tecnologia-5.com/)
+- [NodeJS](https://nodejs.org/en/about/)
+- [Express](https://expressjs.com/pt-br/)
+- [SQLite3](https://www.npmjs.com/package/sqlite3)
+- [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
+- [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [Colors](https://www.npmjs.com/package/colors)
+- [Mime-types](https://www.npmjs.com/package/mime-types)
+- [Parse5](https://www.npmjs.com/package/parse5)
+- [Yargs](https://www.npmjs.com/package/yargs)
+- [Axios](https://www.npmjs.com/package/axios)
+
