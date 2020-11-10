@@ -1,2 +1,0 @@
-# Grafo
-Grafo Web Searcher

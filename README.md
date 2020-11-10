@@ -21,7 +21,7 @@
 > 📑 **Grafo** é um buscador baseado na estrutura de dados Grafos, que se utiliza pesquisa em profundidade para achar links em websites na internet e assim retornar uma página com os mesmos, parecido com o que o Google faz.
 
 <p align="center">
-    <a href="README-pt.md">Português</a>
+    <a href="README.md">Português</a>
 </p>
 
 <div align="center">
