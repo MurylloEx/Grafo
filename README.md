@@ -45,7 +45,6 @@ Este projeto foi feito utilizando as seguintes tecnologias:
 
 - [NodeJS](https://link-para-a-Tecnologia-1.com/)
 - [Express](https://link-para-a-Tecnologia-2.com/)
-- [SQLites](https://link-para-a-Tecnologia-3.com/)
+- [SQLite3](https://link-para-a-Tecnologia-3.com/)
 - [HTML](https://link-para-a-Tecnologia-4.com/)
 - [CSS](https://link-para-a-Tecnologia-5.com/)
-- [Tecnologia #6](https://link-para-a-technology-6.com/)
