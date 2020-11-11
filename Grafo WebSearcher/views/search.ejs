@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="referrer" content="no-referrer-when-downgrade">
 
+    <meta name="description" content="O Grafo é um projeto de motor de pesquisa na Web desenvolvido para a disciplina de Algoritmos e Estruturas de Dados, na Universidade de Pernambuco 2020.">
+
     <link rel="icon" type="image/png" sizes="32x32" href="https://i.imgur.com/6xE49KI.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://i.imgur.com/6xE49KI.png">
     <link rel="shortcut icon" type="image/png" href="https://i.imgur.com/6xE49KI.png">
@@ -333,9 +335,9 @@
             </style>
             <ul class="nav-home">
                 <li class="active"><a>Web</a></li>
-                <li><a href="#">Imagens</a></li>
-                <li><a href="#">Social</a></li>
-                <li><a href="#">Notícias</a></li>
+                <li><a href="/?q=politica&page=1">Política</a></li>
+                <li><a href="/?q=Facebook, Instagram, Twitter, Yahoo, Msn, Gmail&page=1">Social</a></li>
+                <li><a href="/?q=noticias&page=1">Notícias</a></li>
             </ul>
 
             <style media="screen">
@@ -400,6 +402,7 @@
                         <input class="search-form-home__q" id="q" maxlength="2048" name="q" autocomplete="off"
                             title="Pesquisar" type="search" value="" aria-label="Search" aria-haspopup="false"
                             role="combobox" aria-autocomplete="both" dir="ltr" spellcheck="false" placeholder="Pesquisar">
+                        <input type="hidden" name="page" value="1">
                     </div>
                     <button class="search-form-home__button" aria-label="Grafo WebSearcher" type="submit">
                         <div class="ico"></div>
@@ -533,18 +536,18 @@
             <div class="footer">
                 <div class="footer-desktop">
                     <ul class="links">
-                        <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
-                        <li><a href="#"><i class="fa fa-bug" aria-hidden="true"></i> Grafo WebCrawler</a></li>
-                        <li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i> Como funciona?</a></li>
-                        <li><a href="#"><i class="fa fa-code" aria-hidden="true"></i> Algoritmo</a></li>
+                        <li><a href="https://github.com.br/MurylloEx/Grafo#readme"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
+                        <li><a href="/webcrawler"><i class="fa fa-bug" aria-hidden="true"></i> Grafo WebCrawler</a></li>
+                        <li><a href="/howitworks"><i class="fa fa-cogs" aria-hidden="true"></i> Como funciona?</a></li>
+                        <li><a href="/algorithm"><i class="fa fa-code" aria-hidden="true"></i> Algoritmo</a></li>
                     </ul>
                 </div>
                 <div class="footer-mobile">
                     <ul class="links">
-                        <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
-                        <li><a href="#"><i class="fa fa-bug" aria-hidden="true"></i> Grafo WebCrawler</a></li>
-                        <li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i> Como funciona?</a></li>
-                        <li><a href="#"><i class="fa fa-code" aria-hidden="true"></i> Algoritmo</a></li>
+                        <li><a href="https://github.com.br/MurylloEx/Grafo#readme"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
+                        <li><a href="/webcrawler"><i class="fa fa-bug" aria-hidden="true"></i> Grafo WebCrawler</a></li>
+                        <li><a href="/howitworks"><i class="fa fa-cogs" aria-hidden="true"></i> Como funciona?</a></li>
+                        <li><a href="/algorithm"><i class="fa fa-code" aria-hidden="true"></i> Algoritmo</a></li>
                     </ul>
                 </div>
                 <p class="copyright">© Projeto de Algoritmos e Estrutura de Dados, Engenharia de Software, UPE 2020.</p>

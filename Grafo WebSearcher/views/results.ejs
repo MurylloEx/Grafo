@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 
-<html data-component-base="" lang="en" class="gcsa-loaded">
+<html lang="pt-BR" class="gcsa-loaded">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <title>
-      youtube - WebCrawler Search Web Search
+      <%= SearchTerm %> - Grafo Resultados
     </title>
 
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -426,30 +426,16 @@
             }
           </style>
           <div class="search-form">
-            <form class="search-form__form" action="https://www.webcrawler.com/serp" id="search">
+            <form class="search-form__form" action="/" id="search">
               <div>
-                <input
-                  class="search-form__q"
-                  id="q"
-                  maxlength="2048"
-                  name="q"
-                  autocomplete="off"
-                  title="Search"
-                  type="search"
-                  value="youtube"
-                  aria-label="Search"
-                  aria-haspopup="false"
-                  role="combobox"
-                  aria-autocomplete="both"
-                  dir="ltr"
-                  spellcheck="false"
-                />
+                <input class="search-form__q" id="q" maxlength="2048" name="q" autocomplete="off" title="Pesquisar" type="search"
+                  value="<%= SearchTerm %>" aria-label="Search" aria-haspopup="false" role="combobox" aria-autocomplete="both" 
+                  dir="ltr" spellcheck="false" placeholder="Pesquisar">
               </div>
               <input
                 type="hidden"
-                name="sc"
-                id="sc"
-                value="1phZ7YdS5CpIF3JZZjKMzjA3Q71w_s1gc-0MFCJp4jpEBOm4cCGVHXy69_I951QF7C9emTC7vMIcJkxPn7qTrPxj8hWdAQipP6jM1e0WA1CSsHV6jZGagmVekqfZOQZ-kpL1-izGr6XIprARMcmPaKsauZBzoQR1XiOmh4AqU6q5jWPenSMmBGdUKdG_TghDZELlp0Z_JXZipRAPEeM4vZMURhUNpiCn4q0akhi-Btc-PpEKX8TUnlOddPvrXG0Ax2-mTplxpMTBRQuaf9DERKG57IjjisVhTWf7714MXG9zwYd1--dzME_S5L7htudi5oxhZj99PPS0H0hFVg-L_FlgbAxsskqxaNzlfx1ikIhuGI0LN4vJho8BEj5T80tXEWhhLfar8Hx7_hcNmBvnaOryttWeHveFSINVyBlOJKghNXJhhAnmVkzjZrZg8hbqNFUQhQk2mXSvMSYFnfP7yKkRmwyNvKOwpd-QgS1QKMOs6Btw9KwBKM4VywPMYdpDFTsv0P0zWvVWo9RpSCz7jgi8t3J_S6bYubgwlxLFFvgsTtGNIjvccvFJ_h3-EUWEEZwY3dKjr81jV7msdtWw_z2HRClrjqSKDNgy3TDFJzKhH9kwarYE_bjM3VTo1J49wY2arEtw-Et0Thw8pnHUCqjStMAPNMiGtG5YYD1FSL26pJ8bXlXYEHERC181UFH0XZEjFkgW9UCvLCbQFqFJtV8eQUyA5Aq5TYiLHyTLlSNn6yC5RmrRFSjKeygrEsX1x4wILjm6-CNHX5lY3ALhv0bB7K4F-eIs5dgdBfujebPc19BRFTdQZEdxtY9b5INOQtX_Hw4fEp2FrPhW_mrVHJrMhnqP_uUdgVyBSTJqSjNNYyFNC46B-GT2AEZ2CEDjpvIOC1nz1xsVPu7w2AE6AhEKhtGmtMi8M42ioqtpwwCEMOjuEZuwHZK0d4H0iF48uarQNjiNh3RPuC6soTdMNBhEuAWK1g49eSYkLp_HTfJ6qRnO5_unM4Hv-FCD1fogfpcMPQu5v3KiJPIHOHgyce7fqWYZbz_ZXHQouVRnl-gWIJyzwBEMbT1AA-i1ZzTxKBhuoBS7nbf6c9arUAZV72fOK6RV-kE8gU0Mbo__fvSKCBTwEzM2rS_tHh49oDEls-A8gQqKi8ZXwLJfp5X7uDkyapOYg71fAl9sXmqxjkpIRG1lpx-lD6_b3GFeudY9DtSAwlhrwt0Yz3FSN5-gAAsf7dOa-bxzlaqhPf6DoZ2_s2zsitUbRp9NgYOoRbtXon9cV_hF5GXkO4J30U_9oZV-Hj9iSNGPf38Vo5kBSdOhc1FPOjwK7hgiBJKZl-Jf5TAzg1W_JmXT8VJSJrawcuypNJxZd3Vql7AirpznJ8jEyBxSTvw-enEQP3xtPDQM2CDh3sYVKV89D0eWUIF1Aen_NosiOCYlr_yRNPrb4vepqPHzph9LS8rkX5CKMPe1aR5ZJi0prYLo17tFaKDcNdQWlHhJAA772eI7SZwK5kya1YBnB_-xUMFj1CGijkV1mGcapbF2F5oybvUTQjK9Dj3cRtO0W-Hsi8PFyiCIBzsqfGbUqqktuNaVTvP_U5FXkLIBFA-6a-JMHUDmsvGancRw068kxV42wimuchQzH3oGZG80JFWbM8tt1S1mjPhwWI4ecPWXc6Ft0HOAlB4wj2o5OjENP3_vu_ax4oa8Bp48SWc"
+                name="page"
+                value="<%= Page %>"
               />
               <button class="search-form__button" aria-label="WebCrawler Search" type="submit">
                 <div class="ico"></div>
@@ -509,9 +495,9 @@
           </style>
           <ul class="nav">
             <li class="active"><a>Web</a></li>
-            <li><a href="#">Imagens</a></li>
-            <li><a href="#">Social</a></li>
-            <li><a href="#">Notícias</a></li>
+            <li><a href="/?q=politica&page=1">Política</a></li>
+            <li><a href="/?q=Facebook, Instagram, Twitter, Yahoo, Msn, Gmail&page=1">Social</a></li>
+            <li><a href="/?q=noticias&page=1">Notícias</a></li>
           </ul>
         </div>
       </div>
@@ -1432,7 +1418,19 @@
               }
             </style>
             <div class="mapquest_recirc-qi">
-              <span class="mapquest_recirc-qi__label">Resultados da pesquisa</span>
+              <span class="mapquest_recirc-qi__label">Resultados da pesquisa (Resultados nessa página: <%= (HasResults ? Results.length : 'Nenhum') %>)</span>
+              <% if (!HasResults) { %>
+              <div class="notice-noresults-empty">
+                <p><strong>Nenhum resultado foi encontrado para "<%= SearchTerm %>"</strong></p>
+                <p>Sugestões:</p>
+                <ul>
+                    <li>Verifique se todas as palavras foram digitadas corretamente.</li>
+                    <li>Tente diferentes termos de pesquisa.</li>
+                    <li>Tente uma pesquisa mais genérica.</li>
+                    <li>Tente utilizar mais termos.</li>
+                </ul>
+              </div>
+              <% } %>
             </div>
 
             <style media="screen">
@@ -1474,46 +1472,13 @@
             </style>
             <div class="web-bing">
               <span class="web-bing__label">Resultados da pesquisa</span>
-              <div class="web-bing__result">
-                <a class="web-bing__title" href="{SITE_URL}">Título do site</a><br/>
-                <span class="web-bing__url">{SITE_URL}</span><br/>
-                <span class="web-bing__description">{DESCRIPTION_SITE}</span>
-              </div>
-              <div class="web-bing__result">
-                <a class="web-bing__title" href="{SITE_URL}">Título do site</a><br/>
-                <span class="web-bing__url">{SITE_URL}</span><br/>
-                <span class="web-bing__description">{DESCRIPTION_SITE}</span>
-              </div>
-              <div class="web-bing__result">
-                <a class="web-bing__title" href="{SITE_URL}">Título do site</a><br/>
-                <span class="web-bing__url">{SITE_URL}</span><br/>
-                <span class="web-bing__description">{DESCRIPTION_SITE}</span>
-              </div>
-              <div class="web-bing__result">
-                <a class="web-bing__title" href="{SITE_URL}">Título do site</a><br/>
-                <span class="web-bing__url">{SITE_URL}</span><br/>
-                <span class="web-bing__description">{DESCRIPTION_SITE}</span>
-              </div>
-              <div class="web-bing__result">
-                <a class="web-bing__title" href="{SITE_URL}">Título do site</a><br/>
-                <span class="web-bing__url">{SITE_URL}</span><br/>
-                <span class="web-bing__description">{DESCRIPTION_SITE}</span>
-              </div>
-              <div class="web-bing__result">
-                <a class="web-bing__title" href="{SITE_URL}">Título do site</a><br/>
-                <span class="web-bing__url">{SITE_URL}</span><br/>
-                <span class="web-bing__description">{DESCRIPTION_SITE}</span>
-              </div>
-              <div class="web-bing__result">
-                <a class="web-bing__title" href="{SITE_URL}">Título do site</a><br/>
-                <span class="web-bing__url">{SITE_URL}</span><br/>
-                <span class="web-bing__description">{DESCRIPTION_SITE}</span>
-              </div>
-              <div class="web-bing__result">
-                <a class="web-bing__title" href="{SITE_URL}">Título do site</a><br/>
-                <span class="web-bing__url">{SITE_URL}</span><br/>
-                <span class="web-bing__description">{DESCRIPTION_SITE}</span>
-              </div>
+              <% for (let k = 0; k < Results.length; k++) { %>
+                <div class="web-bing__result">
+                  <a class="web-bing__title" href="<%= Results[k].site_url %>"><%= Results[k].site_title %></a><br />
+                  <span class="web-bing__url"><%= Results[k].site_url %></span><br />
+                  <span class="web-bing__description"><%= String(Results[k].site_description).substring(0, 512) + '...' %></span>
+                </div>
+              <% } %>
             </div>
 
           </div>
@@ -1612,27 +1577,29 @@
               }
             }
           </style>
+          <% if (HasResults) { %>
           <div class="pagination">
             <div class="pagination__list">
-              <span class="pagination__num pagination__num--active">1</span>
-              <a class="pagination__num" data-page-number="2" href="#">
-                2
+              <span class="pagination__num pagination__num--active"><%= Page %></span>
+              <a class="pagination__num" data-page-number="<%= Page+1 %>" href="/?q=<%= SearchTerm %>&page=<%= Page+1 %>">
+                <%= Page+1 %>
               </a>
-              <a class="pagination__num" data-page-number="3" href="#">
-                3
+              <a class="pagination__num" data-page-number="<%= Page+2 %>" href="/?q=<%= SearchTerm %>&page=<%= Page+2 %>">
+                <%= Page+2 %>
               </a>
-              <a class="pagination__num" data-page-number="4" href="#">
-                4
+              <a class="pagination__num" data-page-number="<%= Page+3 %>" href="/?q=<%= SearchTerm %>&page=<%= Page+3 %>">
+                <%= Page+3 %>
               </a>
-              <a class="pagination__num" data-page-number="5" href="#">
-                5
+              <a class="pagination__num" data-page-number="<%= Page+4 %>" href="/?q=<%= SearchTerm %>&page=<%= Page+4 %>">
+                <%= Page+4 %>
               </a>
-              <span class="pagination__num pagination__num--next-prev pagination__num--prev pagination__num--disabled">Anterior</span>
-              <a class="pagination__num pagination__num--next-prev pagination__num--next" data-page-number="2" href="#">
+              <a class="pagination__num pagination__num--next-prev pagination__num--prev" href="/?q=<%= SearchTerm %>&page=<%= ((Page-1 <= 0) ? 1 : Page-1) %>">Anterior</a>
+              <a class="pagination__num pagination__num--next-prev pagination__num--next" data-page-number="<%= Page+1 %>" href="/?q=<%= SearchTerm %>&page=<%= Page+1 %>">
                 Próximo
               </a>
             </div>
           </div>
+          <% } %>
 
 
         </div>
@@ -2041,18 +2008,18 @@
         <div class="footer">
           <div class="footer-desktop">
             <ul class="links">
-              <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
-              <li><a href="#"><i class="fa fa-bug" aria-hidden="true"></i> Grafo WebCrawler</a></li>
-              <li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i> Como funciona?</a></li>
-              <li><a href="#"><i class="fa fa-code" aria-hidden="true"></i> Algoritmo</a></li>
+              <li><a href="https://github.com.br/MurylloEx/Grafo#readme"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
+              <li><a href="/webcrawler"><i class="fa fa-bug" aria-hidden="true"></i> Grafo WebCrawler</a></li>
+              <li><a href="/howitworks"><i class="fa fa-cogs" aria-hidden="true"></i> Como funciona?</a></li>
+              <li><a href="/algorithm"><i class="fa fa-code" aria-hidden="true"></i> Algoritmo</a></li>
             </ul>
           </div>
           <div class="footer-mobile">
             <ul class="links">
-              <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
-              <li><a href="#"><i class="fa fa-bug" aria-hidden="true"></i> Grafo WebCrawler</a></li>
-              <li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i> Como funciona?</a></li>
-              <li><a href="#"><i class="fa fa-code" aria-hidden="true"></i> Algoritmo</a></li>
+              <li><a href="https://github.com.br/MurylloEx/Grafo#readme"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
+              <li><a href="/webcrawler"><i class="fa fa-bug" aria-hidden="true"></i> Grafo WebCrawler</a></li>
+              <li><a href="/howitworks"><i class="fa fa-cogs" aria-hidden="true"></i> Como funciona?</a></li>
+              <li><a href="/algorithm"><i class="fa fa-code" aria-hidden="true"></i> Algoritmo</a></li>
             </ul>
           </div>
           <p class="copyright">© Projeto de Algoritmos e Estrutura de Dados, Engenharia de Software, UPE 2020.</p>
