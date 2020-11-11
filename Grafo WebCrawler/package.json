@@ -1,0 +1,22 @@
+{
+  "name": "@grafo/web",
+  "version": "1.0.4",
+  "description": "This project was created for educational purposes. The main goal is show how a grafo based webcrawler works while mapping the Internet websites.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "grafo-crawler": "./index.js"
+  },
+  "author": "Muryllo Pimenta, Kelvin Vasconcelos, Luiz Gustavo, José Edgleyson, José Thiago",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "colors": "^1.4.0",
+    "mime-types": "^2.1.27",
+    "parse5": "^6.0.1",
+    "sqlite3": "^5.0.0",
+    "yargs": "^16.1.0"
+  }
+}
