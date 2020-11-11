@@ -34,8 +34,8 @@ app.get('/algorithm', (req, res) => {
   res.render('howitworks');
 });
 
-app.get('/', (req, res) => {
-  res.render('howitworks');
+app.get('/webcrawler', (req, res) => {
+  res.render('webcrawler');
 });
 
 app.use(Middlewares.PostOpMiddlewares);
